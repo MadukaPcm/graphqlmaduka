@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'graphql_auth',
     'graphql_jwt.refresh_token.apps.RefreshTokenConfig',
+    'django_filters',
     'maduka.apps.MadukaConfig',
     'users',
 ]
@@ -156,7 +157,7 @@ GRAPHENE = {
 }
 
 #defining a default app for authentication.
-AUTH_USER_MODEL = 'users.User'
+#AUTH_USER_MODEL = 'users.User'
 
  #added for django-graphene-jwt.
 AUTHENTICATION_BACKENDS = [
